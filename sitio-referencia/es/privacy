@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Política de Privacidad (GDPR) | EuroHack</title><link rel="icon" href="/assets/eurohack-logo.png"><link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-900-latin.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-700-latin.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-400-latin.woff2"><link rel="preconnect" href="https://js.stripe.com" crossorigin><link rel="preconnect" href="https://checkout.stripe.com" crossorigin><meta property="og:title" content="Política de Privacidad (GDPR) | EuroHack"><meta property="og:type" content="product"><script>
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+</script><script defer src="/_vercel/insights/script.js"></script><link rel="stylesheet" href="/_astro/checkout.BeQra0e6.css">
+<style>.legal-content[data-astro-cid-lhly6ysv] a{color:#93bef8}.legal-content[data-astro-cid-lhly6ysv] a:hover{opacity:.85}
+</style></head> <body class="min-h-screen bg-white">  <main class="min-h-screen bg-surface-950 text-white" data-astro-cid-lhly6ysv> <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16" data-astro-cid-lhly6ysv> <a href="/es" class="text-sm text-white/50 hover:text-white transition-colors inline-flex items-center gap-1 mb-8" data-astro-cid-lhly6ysv> <span aria-hidden="true" data-astro-cid-lhly6ysv>←</span> Volver al inicio </a> <h1 class="text-3xl sm:text-4xl font-black mb-8" data-astro-cid-lhly6ysv>Política de Privacidad (GDPR)</h1> <div class="legal-content text-white/80 leading-relaxed" data-astro-cid-lhly6ysv>
+        <h3 class="text-xl font-bold mt-6 mb-2">1. Responsable del Tratamiento</h3>
+        <p class="mb-4"><strong>Responsable del tratamiento:</strong> EuroHack — N.º IVA IT: 05202660238 — <a href="mailto:info@eurohack.shop" class="underline">info@eurohack.shop</a></p>
+        <p class="mb-4">En cumplimiento del Reglamento General de Protección de Datos (GDPR - Reglamento UE 2016/679) y la LOPDGDD española, EuroHack recopila los siguientes datos personales:</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Datos identificativos</strong>: Nombre y dirección de correo electrónico, recabados al efectuar una compra.</li>
+          <li><strong>Datos de navegación</strong>: Información conductual recabada mediante cookies y tecnologías de seguimiento (Píxeles de Meta, etiquetas de Google).</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6 mb-2">2. Base Jurídica del Tratamiento</h3>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Ejecución contractual (Art. 6.1.b RGPD)</strong>: Para procesar el pago y entregar el producto digital adquirido.</li>
+          <li><strong>Consentimiento (Art. 6.1.a RGPD)</strong>: Para el envío de correos de marketing, newsletters y promociones. El consentimiento puede revocarse en cualquier momento mediante el enlace de baja presente en cada correo.</li>
+          <li><strong>Interés legítimo (Art. 6.1.f RGPD)</strong>: Para la prevención del fraude y las actividades de retargeting publicitario a través de Meta y Google.</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6 mb-2">3. Encargados del Tratamiento</h3>
+        <p class="mb-4">Para prestar nuestros servicios contamos con los siguientes encargados del tratamiento, que tratan los datos exclusivamente para los fines indicados:</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Stripe Inc.</strong> — Procesamiento seguro de pagos. <a href="https://stripe.com/es/privacy" target="_blank" class="underline">Política de privacidad</a></li>
+          <li><strong>Meta Platforms (Facebook)</strong> — Publicidad y retargeting mediante Píxel. <a href="https://www.facebook.com/privacy/policy/" target="_blank" class="underline">Política de privacidad</a></li>
+          <li><strong>Vercel Inc.</strong> — Alojamiento e infraestructura técnica del sitio.</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6 mb-2">4. Período de Conservación de los Datos</h3>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Datos de compra</strong>: Conservados durante 10 años en cumplimiento de las obligaciones fiscales y contables aplicables.</li>
+          <li><strong>Datos de email marketing</strong>: Conservados hasta la revocación del consentimiento o la solicitud de supresión.</li>
+          <li><strong>Datos de navegación/cookies</strong>: Conservados un máximo de 13 meses.</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-6 mb-2">5. Derechos del Usuario</h3>
+        <p class="mb-4">Conforme a los Arts. 15–22 del RGPD, puedes ejercer en cualquier momento tu derecho de <strong>acceso, rectificación, supresión</strong> (derecho al olvido), <strong>limitación del tratamiento, portabilidad</strong> y <strong>oposición</strong> al marketing. Para ejercer estos derechos, escríbenos a <a href="mailto:info@eurohack.shop" class="underline">info@eurohack.shop</a>. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" class="underline">aepd.es</a>).</p>
+      </div> <div class="mt-12 border-t border-white/10 pt-6 text-center" data-astro-cid-lhly6ysv> <p class="text-[11px] text-white/30" data-astro-cid-lhly6ysv>
+Giannattasio Juan Martin — P. IVA 05202660238 — <a href="mailto:info@eurohack.shop" class="underline hover:opacity-80" data-astro-cid-lhly6ysv>info&#64;eurohack.shop</a> </p>   </div> </div> </main>    </body></html>

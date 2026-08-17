@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><style>
+@page { size: A4; margin: 0; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#0B1210; background:#fff; }
+.page { width:210mm; height:297mm; page-break-after: always; position:relative; background:#F4F0E6; overflow:hidden; }
+.page:last-child { page-break-after: auto; }
+.goldline { height:5px; background:linear-gradient(90deg,#C9A84C,#8a6f2a); }
+header.pd { background:#0B1210; padding:16px 22mm 14px; display:flex; justify-content:space-between; align-items:center; }
+header.pd .brand { font-weight:800; font-size:11pt; letter-spacing:4px; color:#fff; }
+header.pd .brand span { color:#7ED957; }
+header.pd .band { font-weight:700; font-size:9pt; letter-spacing:2px; color:#7ED957; background:rgba(126,217,87,.12); border:1px solid rgba(126,217,87,.4); padding:4px 12px; border-radius:999px; }
+.pad { padding: 10mm 16mm 0; }
+.eyebrow { font-size:8.5pt; font-weight:700; letter-spacing:3px; color:#3E8F3C; text-transform:uppercase; }
+h1.t { font-size:23pt; font-weight:800; line-height:1.1; margin:5px 0 6px; letter-spacing:-.5px; }
+.rule { width:34mm; height:6px; border-radius:3px; background:linear-gradient(90deg,#7ED957,#C9A84C); margin:8px 0 12px; }
+.chips { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+.chip { background:#fff; border:1px solid #E0D9C6; border-radius:999px; padding:4px 12px; font-size:8.5pt; font-weight:600; box-shadow:0 1px 3px rgba(11,18,16,.06); }
+.chip b { color:#3E8F3C; }
+.card { background:#fff; border:1px solid #E0D9C6; border-radius:4mm; padding:7mm 8mm; margin-bottom:5mm; box-shadow:0 2px 8px rgba(11,18,16,.05); }
+.label { font-size:8pt; font-weight:800; letter-spacing:2.5px; color:#3E8F3C; text-transform:uppercase; margin-bottom:4px; display:flex; align-items:center; gap:8px; }
+.label::after { content:''; flex:1; height:1.5px; background:linear-gradient(90deg,#D8D0BC,transparent); }
+.card p { font-size:9.5pt; line-height:1.5; color:#2A2A26; }
+.step { display:flex; gap:6px; align-items:flex-start; margin-bottom:5px; }
+.num { min-width:7mm; height:7mm; border-radius:50%; background:#0B1210; color:#7ED957; font-weight:800; font-size:9pt; display:flex; align-items:center; justify-content:center; }
+.step b { font-size:9pt; color:#0B1210; }
+.step span { font-size:9pt; color:#2A2A26; line-height:1.45; }
+.tick { color:#3E8F3C; font-weight:800; font-size:9pt; }
+.fieldwrap { background:#fff; border:1px solid #E0D9C6; border-radius:4mm; padding:6mm 8mm; box-shadow:0 2px 8px rgba(11,18,16,.05); }
+.diag { width:100%; display:block; }
+footer.pd { position:absolute; bottom:8mm; left:16mm; right:16mm; display:flex; justify-content:space-between; align-items:center; border-top:1.5px solid #D8D0BC; padding-top:4mm; }
+footer.pd .l { display:flex; align-items:center; gap:4mm; }
+footer.pd .l img { height:7mm; width:7mm; object-fit:contain; }
+footer.pd span { font-size:7.5pt; font-weight:600; color:#7A7464; letter-spacing:1.5px; }
+.pageno { font-size:9pt; font-weight:800; color:#0B1210; background:#F4F0E6; border:1px solid #D8D0BC; border-radius:50%; width:9mm; height:9mm; display:flex; align-items:center; justify-content:center; }
+/* portada */
+.cover { background:#0B1210; color:#fff; }
+.cover .goldline { position:absolute; top:0; left:0; right:0; }
+.cover img.portada { position:absolute; left:0; right:0; top:32mm; bottom:70mm; width:100%; height:auto; object-fit:contain; }
+.cover h1.big { position:absolute; top:18mm; left:0; right:0; text-align:center; font-size:21pt; font-weight:800; letter-spacing:5px; }
+.cover h1.big span { color:#7ED957; }
+.cover .coverfoot { position:absolute; bottom:16mm; left:20mm; right:20mm; text-align:center; }
+.cover .coverfoot .t1 { font-size:16pt; font-weight:800; letter-spacing:2px; }
+.cover .coverfoot .t2 { font-size:9.5pt; color:#9FB4A3; margin-top:4mm; line-height:1.6; }
+table.tab { width:100%; border-collapse:collapse; font-size:8.5pt; }
+table.tab th { background:#0B1210; color:#fff; font-weight:800; text-align:left; padding:2.2mm 3mm; letter-spacing:1px; }
+table.tab td { padding:2mm 3mm; border-bottom:1px solid #EDE7D8; color:#2A2A26; }
+table.tab tr:nth-child(even) td { background:#FAF8F1; }
+</style></head><body>
+<div class="page cover">
+ <div class="goldline"></div>
+ <h1 class="big">FUßBALLPRO <span>MASTERPAKET</span></h1>
+ 
+ <div class="coverfoot">
+  <div class="t1">Test Band</div>
+  <div class="t2">Subtítulo</div>
+ </div>
+ <footer class="pd" style="bottom:6mm;">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · BAND 01 · F-JUGEND</span></div>
+  <div class="pageno">1</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">BAND 01 · F-JUGEND</div></header>
+ <div class="pad">
+  <div class="eyebrow">Inhalt</div>
+  <h1 class="t">Übersicht</h1>
+  <div class="rule"></div>
+  <table class="tab" style="margin-top:4mm;">
+   <tr><th>Einheit</th><th>Thema</th><th>Schwerpunkt</th></tr>
+   <tr><td style="width:12%">01</td><td>Test</td><td style="width:18%">Technik</td></tr>
+  </table>
+ </div>
+ <footer class="pd"><div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · BAND 01 · F-JUGEND</span></div><div class="pageno">01</div></footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">BAND 01 · F-JUGEND</div></header>
+ <div class="pad">
+  <div class="eyebrow">Technik · Einheit 1</div>
+  <h1 class="t">Test</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>45</b> Minuten</div>
+    <div class="chip"><b>10</b> Spieler</div>
+    <div class="chip"><b>8 Hütchen</b></div>
+    <div class="chip"><b>U8–U10</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Testziel</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">1</div><div><b>Aufwärmen (10 Min):</b> <span>frei dribbeln im Quadrat.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld verkleinern</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Freies Spiel.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <path d="M 60 250 L 210 250" stroke="#2A2A26" stroke-width="6" marker-end="url(#a)"/>
+ <path d="M 230 250 C 270 250 270 200 320 200 S 370 250 410 250 S 460 200 510 200 S 560 250 600 250" fill="none" stroke="#2A2A26" stroke-width="6" marker-end="url(#a)"/>
+ <g fill="#E8873C"><polygon points="240,70 228,102 252,102"/><polygon points="300,70 288,102 312,102"/><polygon points="360,70 348,102 372,102"/><polygon points="420,70 408,102 432,102"/><polygon points="480,70 468,102 492,102"/></g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="90" cy="60" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="90" y="69">1</text>
+  <circle cx="280" cy="240" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="280" y="249">2</text>
+  <circle cx="600" cy="130" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="600" y="139">3</text>
+ </g>
+ <circle cx="620" cy="250" r="18" fill="#fff" stroke="#0B1210" stroke-width="4"/>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · BAND 01 · F-JUGEND</span></div>
+  <div class="pageno">1</div>
+ </footer>
+</div></body></html>

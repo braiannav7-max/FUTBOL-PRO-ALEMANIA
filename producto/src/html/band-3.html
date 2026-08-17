@@ -1,0 +1,999 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><style>
+@page { size: A4; margin: 0; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#0B1210; background:#fff; }
+.page { width:210mm; height:297mm; page-break-after: always; position:relative; background:#F4F0E6; overflow:hidden; }
+.page:last-child { page-break-after: auto; }
+.goldline { height:5px; background:linear-gradient(90deg,#C9A84C,#8a6f2a); }
+header.pd { background:#0B1210; padding:16px 22mm 14px; display:flex; justify-content:space-between; align-items:center; }
+header.pd .brand { font-weight:800; font-size:11pt; letter-spacing:4px; color:#fff; }
+header.pd .brand span { color:#7ED957; }
+header.pd .band { font-weight:700; font-size:9pt; letter-spacing:2px; color:#7ED957; background:rgba(126,217,87,.12); border:1px solid rgba(126,217,87,.4); padding:4px 12px; border-radius:999px; }
+.pad { padding: 10mm 16mm 0; }
+.eyebrow { font-size:8.5pt; font-weight:700; letter-spacing:3px; color:#3E8F3C; text-transform:uppercase; }
+h1.t { font-size:23pt; font-weight:800; line-height:1.1; margin:5px 0 6px; letter-spacing:-.5px; }
+.rule { width:34mm; height:6px; border-radius:3px; background:linear-gradient(90deg,#7ED957,#C9A84C); margin:8px 0 12px; }
+.chips { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+.chip { background:#fff; border:1px solid #E0D9C6; border-radius:999px; padding:4px 12px; font-size:8.5pt; font-weight:600; box-shadow:0 1px 3px rgba(11,18,16,.06); }
+.chip b { color:#3E8F3C; }
+.card { background:#fff; border:1px solid #E0D9C6; border-radius:4mm; padding:7mm 8mm; margin-bottom:5mm; box-shadow:0 2px 8px rgba(11,18,16,.05); }
+.label { font-size:8pt; font-weight:800; letter-spacing:2.5px; color:#3E8F3C; text-transform:uppercase; margin-bottom:4px; display:flex; align-items:center; gap:8px; }
+.label::after { content:''; flex:1; height:1.5px; background:linear-gradient(90deg,#D8D0BC,transparent); }
+.card p { font-size:9.5pt; line-height:1.5; color:#2A2A26; }
+.step { display:flex; gap:6px; align-items:flex-start; margin-bottom:5px; }
+.num { min-width:7mm; height:7mm; border-radius:50%; background:#0B1210; color:#7ED957; font-weight:800; font-size:9pt; display:flex; align-items:center; justify-content:center; }
+.step b { font-size:9pt; color:#0B1210; }
+.step span { font-size:9pt; color:#2A2A26; line-height:1.45; }
+.tick { color:#3E8F3C; font-weight:800; font-size:9pt; }
+.fieldwrap { background:#fff; border:1px solid #E0D9C6; border-radius:4mm; padding:6mm 8mm; box-shadow:0 2px 8px rgba(11,18,16,.05); }
+.diag { width:100%; display:block; }
+footer.pd { position:absolute; bottom:8mm; left:16mm; right:16mm; display:flex; justify-content:space-between; align-items:center; border-top:1.5px solid #D8D0BC; padding-top:4mm; }
+footer.pd .l { display:flex; align-items:center; gap:4mm; }
+footer.pd .l img { height:7mm; width:7mm; object-fit:contain; }
+footer.pd span { font-size:7.5pt; font-weight:600; color:#7A7464; letter-spacing:1.5px; }
+.pageno { font-size:9pt; font-weight:800; color:#0B1210; background:#F4F0E6; border:1px solid #D8D0BC; border-radius:50%; width:9mm; height:9mm; display:flex; align-items:center; justify-content:center; }
+/* portada */
+.cover { background:#0B1210; color:#fff; }
+.cover .goldline { position:absolute; top:0; left:0; right:0; }
+.cover img.portada { position:absolute; left:0; right:0; top:32mm; bottom:70mm; width:100%; height:auto; object-fit:contain; }
+.cover h1.big { position:absolute; top:18mm; left:0; right:0; text-align:center; font-size:21pt; font-weight:800; letter-spacing:5px; }
+.cover h1.big span { color:#7ED957; }
+.cover .coverfoot { position:absolute; bottom:16mm; left:20mm; right:20mm; text-align:center; }
+.cover .coverfoot .t1 { font-size:16pt; font-weight:800; letter-spacing:2px; }
+.cover .coverfoot .t2 { font-size:9.5pt; color:#9FB4A3; margin-top:4mm; line-height:1.6; }
+table.tab { width:100%; border-collapse:collapse; font-size:8.5pt; }
+table.tab th { background:#0B1210; color:#fff; font-weight:800; text-align:left; padding:2.2mm 3mm; letter-spacing:1px; }
+table.tab td { padding:2mm 3mm; border-bottom:1px solid #EDE7D8; color:#2A2A26; }
+table.tab tr:nth-child(even) td { background:#FAF8F1; }
+</style></head><body>
+<div class="page cover">
+ <div class="goldline"></div>
+ <h1 class="big">FUßBALLPRO <span>MASTERPAKET</span></h1>
+ <img class="portada" src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/../../sitio-referencia/_astro/volume-3.yFqzv0kr_Z1LB26D.webp">
+ <div class="coverfoot">
+  <div class="t1">D-JUGEND (U13–U14)</div>
+  <div class="t2">20 komplette Trainingseinheiten mit Spielaufbau, Pressing und Umschaltspiel.</div>
+ </div>
+ <footer class="pd" style="bottom:6mm;">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">3</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Inhalt</div>
+  <h1 class="t">Übersicht</h1>
+  <div class="rule"></div>
+  <table class="tab" style="margin-top:4mm;">
+   <tr><th>Einheit</th><th>Thema</th><th>Schwerpunkt</th></tr>
+   <tr><td style="width:12%">01</td><td>Spielaufbau von hinten</td><td style="width:18%">Spielaufbau</td></tr><tr><td style="width:12%">02</td><td>Ballbesitz 7 gegen 4</td><td style="width:18%">Ballbesitz</td></tr><tr><td style="width:12%">03</td><td>Umschaltspiel 4 gegen 3</td><td style="width:18%">Umschalten</td></tr><tr><td style="width:12%">04</td><td>Pressing im Viererblock</td><td style="width:18%">Pressing</td></tr><tr><td style="width:12%">05</td><td>Angriff über die dritte Zone</td><td style="width:18%">Angriff</td></tr><tr><td style="width:12%">06</td><td>Tiefenläufe und Raumgewinn</td><td style="width:18%">Kombination</td></tr><tr><td style="width:12%">07</td><td>Flügelspiel mit Doppelbesetzung</td><td style="width:18%">Flügelspiel</td></tr><tr><td style="width:12%">08</td><td>Gegenpressing nach Ballverlust</td><td style="width:18%">Gegenpressing</td></tr><tr><td style="width:12%">09</td><td>Positionsspiel 8 gegen 5</td><td style="width:18%">Positionsspiel</td></tr><tr><td style="width:12%">10</td><td>Abschluss nach Kombination</td><td style="width:18%">Abschluss</td></tr><tr><td style="width:12%">11</td><td>Ecken mit Laufwegen</td><td style="width:18%">Standards</td></tr><tr><td style="width:12%">12</td><td>Spiel in Überzahl 5 gegen 3</td><td style="width:18%">Überzahl</td></tr><tr><td style="width:12%">13</td><td>Defensive Verschiebung</td><td style="width:18%">Defensive</td></tr><tr><td style="width:12%">14</td><td>Spielverlagerung mit langem Pass</td><td style="width:18%">Spielverlagerung</td></tr><tr><td style="width:12%">15</td><td>Torschuss unter Zeitdruck</td><td style="width:18%">Torschuss</td></tr><tr><td style="width:12%">16</td><td>1 gegen 1 – Torwarttraining</td><td style="width:18%">1 gegen 1</td></tr><tr><td style="width:12%">17</td><td>Ballzirkulation mit Anbietbewegungen</td><td style="width:18%">Ballzirkulation</td></tr><tr><td style="width:12%">18</td><td>Angriffspressing nach Abstoß</td><td style="width:18%">Pressing</td></tr><tr><td style="width:12%">19</td><td>8 gegen 8 mit Zonenregeln</td><td style="width:18%">Spielform</td></tr><tr><td style="width:12%">20</td><td>Turnier mit Aufgaben</td><td style="width:18%">Turnier</td></tr>
+  </table>
+ </div>
+ <footer class="pd"><div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div><div class="pageno">01</div></footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Spielaufbau · Einheit 1</div>
+  <h1 class="t">Spielaufbau von hinten</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Sicherer Spielaufbau gegen Anlaufen: erste Passoptionen, Freiräume nutzen und Ballbesitz behalten.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">1</div><div><b>Aufwärmen (10 Min):</b> <span>Passspiel mit Positionswechsel.</span></div></div><div class="step"><div class="num">1</div><div><b>Aufbauspiel 5 gegen 3 (25 Min):</b> <span>Aufbau aus der eigenen Hälfte gegen Pressing.</span></div></div><div class="step"><div class="num">1</div><div><b>Spielaufbau im 4 gegen 4 (25 Min):</b> <span>mit Anspielstationen und Torhüter.</span></div></div><div class="step"><div class="num">1</div><div><b>Abschluss (15 Min):</b> <span>freies Spiel mit Aufbauregel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Pressing verstärken</p><p><span class="tick">✓</span> Zwei Kontakte</p><p><span class="tick">✓</span> Joker hinter der Linie</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Spiel 7 gegen 7 mit Pflichtaufbau aus der Abwehr.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="205" x2="698" y2="205" stroke="#E8873C" stroke-width="6" stroke-dasharray="16 12"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 300 225 L 250 175"/><path d="M 400 225 L 450 175"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="350" cy="235" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="244">1</text>
+  <circle cx="300" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="149">2</text>
+  <circle cx="400" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="400" y="149">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">1</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Ballbesitz · Einheit 2</div>
+  <h1 class="t">Ballbesitz 7 gegen 4</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Geduldiger Ballbesitz, schnelles Passspiel und das Finden von Räumen in Überzahl.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">2</div><div><b>Aufwärmen (10 Min):</b> <span>Rondo 5 gegen 2.</span></div></div><div class="step"><div class="num">2</div><div><b>Ballbesitz 7 gegen 4 (30 Min):</b> <span>großes Quadrat, vier Fänger pressen.</span></div></div><div class="step"><div class="num">2</div><div><b>Punktejagd (20 Min):</b> <span>8 Pässe = Punkt, Fänger wechseln bei Eroberung.</span></div></div><div class="step"><div class="num">2</div><div><b>Abschluss (15 Min):</b> <span>Positionsspiel mit zwei Jokern.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld verkleinern</p><p><span class="tick">✓</span> Zwei Kontakte</p><p><span class="tick">✓</span> Fänger aktiv pressen</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Positionsspiel 8 gegen 5 auf Ballbesitz.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="235" y1="2" x2="235" y2="298" stroke="#fff" stroke-width="3"/>
+ <line x1="468" y1="2" x2="468" y2="298" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="150" x2="698" y2="150" stroke="#fff" stroke-width="3"/>
+ <g font-family="Arial" font-weight="800" font-size="22" text-anchor="middle">
+  <circle cx="118" cy="75" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="118" y="84">1</text>
+  <circle cx="351" cy="75" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="351" y="84">2</text>
+  <circle cx="584" cy="75" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="584" y="84">3</text>
+  <circle cx="118" cy="225" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="118" y="234">4</text>
+  <circle cx="351" cy="225" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="351" y="234">5</text>
+  <circle cx="584" cy="225" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="584" y="234">6</text>
+ </g>
+ <circle cx="600" cy="80" r="16" fill="#fff" stroke="#0B1210" stroke-width="4"/>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">2</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Umschalten · Einheit 3</div>
+  <h1 class="t">Umschaltspiel 4 gegen 3</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Schnelles Umschalten nach Ballgewinn und Ballverlust, Tore in Überzahl erzielen.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">3</div><div><b>Aufwärmen (10 Min):</b> <span>Pass- und Laufspiele.</span></div></div><div class="step"><div class="num">3</div><div><b>Umschaltspiel 4 gegen 3 (30 Min):</b> <span>Angriff sofort nach Balleroberung.</span></div></div><div class="step"><div class="num">3</div><div><b>Sekundenregel (20 Min):</b> <span>Abschluss innerhalb von 8 Sekunden.</span></div></div><div class="step"><div class="num">3</div><div><b>Abschluss (15 Min):</b> <span>freies Spiel mit Umschaltpflicht.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Sekunden erhöhen</p><p><span class="tick">✓</span> Torwart mitspielen</p><p><span class="tick">✓</span> Joker für die Defensive</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Umschalt-Turnier mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#fff" stroke-width="3">
+  <line x1="235" y1="2" x2="235" y2="298"/><line x1="468" y1="2" x2="468" y2="298"/>
+ </g>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 70 250 C 70 170 110 160 110 110 C 110 60 170 50 170 30"/>
+  <path d="M 300 250 C 300 170 260 160 260 110 C 260 60 320 50 350 30"/>
+  <path d="M 500 250 C 500 170 540 160 540 110 C 540 60 600 50 630 30"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="70" cy="270" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="70" y="279">1</text>
+  <circle cx="300" cy="270" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="279">2</text>
+  <circle cx="500" cy="270" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="500" y="279">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">3</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Pressing · Einheit 4</div>
+  <h1 class="t">Pressing im Viererblock</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>16</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Gemeinsames Verschieben, das Schließen von Passwegen und Balleroberung im Block.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">4</div><div><b>Aufwärmen (10 Min):</b> <span>Lauf- und Reaktionsspiele.</span></div></div><div class="step"><div class="num">4</div><div><b>Pressing 4 gegen 4 (30 Min):</b> <span>Verschieben als Einheit im Feld.</span></div></div><div class="step"><div class="num">4</div><div><b>Pressing im Spiel 8 gegen 8 (25 Min):</b> <span>Angriffspressing nach Ballverlust.</span></div></div><div class="step"><div class="num">4</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld verkleinern</p><p><span class="tick">✓</span> Pressingzonen markieren</p><p><span class="tick">✓</span> Mehr Fänger</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Spiel mit Pressing-Zonen und Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="205" x2="698" y2="205" stroke="#E8873C" stroke-width="6" stroke-dasharray="16 12"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 300 225 L 250 175"/><path d="M 400 225 L 450 175"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="350" cy="235" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="244">1</text>
+  <circle cx="300" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="149">2</text>
+  <circle cx="400" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="400" y="149">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">4</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Angriff · Einheit 5</div>
+  <h1 class="t">Angriff über die dritte Zone</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Schnelles Vorwärtsspiel, Tiefenläufe und das Finalisieren in der letzten Zone.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">5</div><div><b>Aufwärmen (10 Min):</b> <span>Passspiel mit Tempowechsel.</span></div></div><div class="step"><div class="num">5</div><div><b>Zonen-Spiel (30 Min):</b> <span>Ball muss schnell in die dritte Zone gespielt werden.</span></div></div><div class="step"><div class="num">5</div><div><b>Tiefenläufe (20 Min):</b> <span>Läufe in die Tiefe mit Abschluss.</span></div></div><div class="step"><div class="num">5</div><div><b>Abschluss (15 Min):</b> <span>freies Spiel mit Zonenregel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Zonen verkleinern</p><p><span class="tick">✓</span> Joker in der Endzone</p><p><span class="tick">✓</span> Zeitlimit pro Zone</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Zonen-Spiel 7 gegen 7 mit Punkten für dritte Zone.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 160 100 L 330 100"/><path d="M 370 100 L 540 100"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="80" cy="80" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="80" y="89">1</text>
+  <circle cx="350" cy="45" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="54">2</text>
+  <circle cx="620" cy="220" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="620" y="229">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">5</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Kombination · Einheit 6</div>
+  <h1 class="t">Tiefenläufe und Raumgewinn</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Läufe in die Tiefe, Doppelpässe und Raumgewinn durch Kombinationen.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">6</div><div><b>Aufwärmen (10 Min):</b> <span>Doppelpass-Kombinationen.</span></div></div><div class="step"><div class="num">6</div><div><b>Tiefenläufe (30 Min):</b> <span>Läufe hinter die Kette mit Abschluss.</span></div></div><div class="step"><div class="num">6</div><div><b>Kombinationsspiel (25 Min):</b> <span>Kombinationen durch Tore und Zonen.</span></div></div><div class="step"><div class="num">6</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Gegner aktiv</p><p><span class="tick">✓</span> Zeitlimit</p><p><span class="tick">✓</span> Kombinationen vorgeben</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Kombinations-Wettbewerb mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 80 250 L 180 250"/><path d="M 200 250 L 300 250"/>
+  <path d="M 320 250 L 420 250"/><path d="M 440 250 L 540 250"/>
+  <path d="M 560 250 L 620 250"/>
+ </g>
+ <g fill="#E8873C">
+  <polygon points="95,270 82,235 108,235"/><polygon points="215,270 202,235 228,235"/><polygon points="335,270 322,235 348,235"/><polygon points="455,270 442,235 468,235"/><polygon points="575,270 562,235 588,235"/>
+  <polygon points="150,235 138,200 162,200"/><polygon points="270,235 258,200 282,200"/><polygon points="390,235 378,200 402,200"/><polygon points="510,235 498,200 522,200"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="100" cy="70" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="100" y="79">1</text>
+  <circle cx="350" cy="120" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="129">2</text>
+  <circle cx="600" cy="70" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="600" y="79">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">6</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Flügelspiel · Einheit 7</div>
+  <h1 class="t">Flügelspiel mit Doppelbesetzung</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Flügelangriffe mit Überzahl, Flanken und Abschluss in der Mitte.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">7</div><div><b>Aufwärmen (10 Min):</b> <span>Passspiel über die Außen.</span></div></div><div class="step"><div class="num">7</div><div><b>Flügel 3 gegen 2 (30 Min):</b> <span>Überzahl auf dem Flügel herstellen.</span></div></div><div class="step"><div class="num">7</div><div><b>Flanken und Abschluss (25 Min):</b> <span>Flügelangriffe abschließen.</span></div></div><div class="step"><div class="num">7</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Flanken von beiden Seiten</p><p><span class="tick">✓</span> Kopfball</p><p><span class="tick">✓</span> Joker im Zentrum</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Flügel-Turnier mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#fff" stroke-width="3">
+  <line x1="235" y1="2" x2="235" y2="298"/><line x1="468" y1="2" x2="468" y2="298"/>
+ </g>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 70 250 C 70 170 110 160 110 110 C 110 60 170 50 170 30"/>
+  <path d="M 300 250 C 300 170 260 160 260 110 C 260 60 320 50 350 30"/>
+  <path d="M 500 250 C 500 170 540 160 540 110 C 540 60 600 50 630 30"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="70" cy="270" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="70" y="279">1</text>
+  <circle cx="300" cy="270" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="279">2</text>
+  <circle cx="500" cy="270" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="500" y="279">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">7</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Gegenpressing · Einheit 8</div>
+  <h1 class="t">Gegenpressing nach Ballverlust</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Sofortiges Gegenpressing, das Wiedererobern des Balls in wenigen Sekunden.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">8</div><div><b>Aufwärmen (10 Min):</b> <span>Reaktions- und Laufspiele.</span></div></div><div class="step"><div class="num">8</div><div><b>Gegenpressing 5 gegen 4 (30 Min):</b> <span>Ballverlust – sofort attackieren.</span></div></div><div class="step"><div class="num">8</div><div><b>Sekundenregel (20 Min):</b> <span>Ball innerhalb von 5 Sekunden attackieren.</span></div></div><div class="step"><div class="num">8</div><div><b>Abschluss (15 Min):</b> <span>freies Spiel mit Gegenpress-Pflicht.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Sekunden erhöhen</p><p><span class="tick">✓</span> Feld verkleinern</p><p><span class="tick">✓</span> Joker für die Defensive</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Gegenpressing-Turnier mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="205" x2="698" y2="205" stroke="#E8873C" stroke-width="6" stroke-dasharray="16 12"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 300 225 L 250 175"/><path d="M 400 225 L 450 175"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="350" cy="235" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="244">1</text>
+  <circle cx="300" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="149">2</text>
+  <circle cx="400" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="400" y="149">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">8</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Positionsspiel · Einheit 9</div>
+  <h1 class="t">Positionsspiel 8 gegen 5</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>16</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Spielaufbau, Positionsdisziplin und Geduld im Ballbesitz unter Gegnerdruck.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">9</div><div><b>Aufwärmen (10 Min):</b> <span>Rondo 5 gegen 2.</span></div></div><div class="step"><div class="num">9</div><div><b>Positionsspiel 8 gegen 5 (35 Min):</b> <span>großes Feld, Joker außen.</span></div></div><div class="step"><div class="num">9</div><div><b>Punktejagd (20 Min):</b> <span>8 Pässe = Punkt.</span></div></div><div class="step"><div class="num">9</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld verkleinern</p><p><span class="tick">✓</span> Zwei Kontakte</p><p><span class="tick">✓</span> Fänger pressen aktiv</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Positionsspiel mit Punktewertung.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="235" y1="2" x2="235" y2="298" stroke="#fff" stroke-width="3"/>
+ <line x1="468" y1="2" x2="468" y2="298" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="150" x2="698" y2="150" stroke="#fff" stroke-width="3"/>
+ <g font-family="Arial" font-weight="800" font-size="22" text-anchor="middle">
+  <circle cx="118" cy="75" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="118" y="84">1</text>
+  <circle cx="351" cy="75" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="351" y="84">2</text>
+  <circle cx="584" cy="75" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="584" y="84">3</text>
+  <circle cx="118" cy="225" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="118" y="234">4</text>
+  <circle cx="351" cy="225" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="351" y="234">5</text>
+  <circle cx="584" cy="225" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="584" y="234">6</text>
+ </g>
+ <circle cx="600" cy="80" r="16" fill="#fff" stroke="#0B1210" stroke-width="4"/>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">9</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Abschluss · Einheit 10</div>
+  <h1 class="t">Abschluss nach Kombination</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>12 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Torabschluss nach Kombinationen, aus dem Dribbling und nach Vorlage.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">10</div><div><b>Aufwärmen (10 Min):</b> <span>Schussübungen.</span></div></div><div class="step"><div class="num">10</div><div><b>Kombinationen mit Abschluss (30 Min):</b> <span>feste Abläufe im Strafraum.</span></div></div><div class="step"><div class="num">10</div><div><b>Abschluss unter Druck (25 Min):</b> <span>mit Gegner und Zeitlimit.</span></div></div><div class="step"><div class="num">10</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Volleys</p><p><span class="tick">✓</span> Schwacher Fuß</p><p><span class="tick">✓</span> Gegner aktiv</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Abschluss-Wettbewerb in Teams.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 150 240 C 200 240 220 180 280 180"/><path d="M 550 60 C 500 60 480 120 420 120"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="200" cy="200" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="200" y="209">1</text>
+  <circle cx="350" cy="60" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="69">2</text>
+  <circle cx="500" cy="240" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="500" y="249">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">10</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Standards · Einheit 11</div>
+  <h1 class="t">Ecken mit Laufwegen</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>12 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Eckballvarianten mit festen Laufwegen, Abschluss und Absicherung.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">11</div><div><b>Aufwärmen (10 Min):</b> <span>Schussübungen.</span></div></div><div class="step"><div class="num">11</div><div><b>Ecken defensiv (25 Min):</b> <span>klären und kontern.</span></div></div><div class="step"><div class="num">11</div><div><b>Ecken offensiv (30 Min):</b> <span>drei Varianten mit Laufwegen üben.</span></div></div><div class="step"><div class="num">11</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Kurze Ecken</p><p><span class="tick">✓</span> Risiko-Varianten</p><p><span class="tick">✓</span> Torwart mitspielen</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Ecken-Wettbewerb mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 150 240 C 200 240 220 180 280 180"/><path d="M 550 60 C 500 60 480 120 420 120"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="200" cy="200" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="200" y="209">1</text>
+  <circle cx="350" cy="60" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="69">2</text>
+  <circle cx="500" cy="240" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="500" y="249">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">11</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Überzahl · Einheit 12</div>
+  <h1 class="t">Spiel in Überzahl 5 gegen 3</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>8 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Überzahlspiel kontrollieren, Räume finden und Ballbesitz behalten.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">12</div><div><b>Aufwärmen (10 Min):</b> <span>Passspiel im Quadrat.</span></div></div><div class="step"><div class="num">12</div><div><b>5 gegen 3 (30 Min):</b> <span>Überzahl auf Zeit, Fänger wechseln.</span></div></div><div class="step"><div class="num">12</div><div><b>Punktejagd (20 Min):</b> <span>6 Pässe = Punkt.</span></div></div><div class="step"><div class="num">12</div><div><b>Abschluss (15 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld verkleinern</p><p><span class="tick">✓</span> Zwei Kontakte</p><p><span class="tick">✓</span> Fänger pressen aktiv</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Überzahl-Turnier mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 160 100 L 330 100"/><path d="M 370 100 L 540 100"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="80" cy="80" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="80" y="89">1</text>
+  <circle cx="350" cy="45" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="54">2</text>
+  <circle cx="620" cy="220" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="620" y="229">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">12</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Defensive · Einheit 13</div>
+  <h1 class="t">Defensive Verschiebung</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>16</b> Spieler</div>
+    <div class="chip"><b>8 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Gemeinsames Verschieben, das Schließen von Räumen und geordnetes Verteidigen.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">13</div><div><b>Aufwärmen (10 Min):</b> <span>Lauf- und Reaktionsspiele.</span></div></div><div class="step"><div class="num">13</div><div><b>Verschieben 4 gegen 4 (30 Min):</b> <span>als Einheit mit dem Ball verschieben.</span></div></div><div class="step"><div class="num">13</div><div><b>Spiel 8 gegen 8 (25 Min):</b> <span>defensives Verschieben im Team.</span></div></div><div class="step"><div class="num">13</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Zonen markieren</p><p><span class="tick">✓</span> Pressingzonen</p><p><span class="tick">✓</span> Mehr Fänger</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Defensiv-Turnier mit Zonenpunkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="205" x2="698" y2="205" stroke="#E8873C" stroke-width="6" stroke-dasharray="16 12"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 300 225 L 250 175"/><path d="M 400 225 L 450 175"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="350" cy="235" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="244">1</text>
+  <circle cx="300" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="149">2</text>
+  <circle cx="400" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="400" y="149">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">13</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Spielverlagerung · Einheit 14</div>
+  <h1 class="t">Spielverlagerung mit langem Pass</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Spielverlagerung, weite Pässe und das Wechseln der Angriffsseite.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">14</div><div><b>Aufwärmen (10 Min):</b> <span>lange Pässe im Paar.</span></div></div><div class="step"><div class="num">14</div><div><b>Verlagerungsschule (30 Min):</b> <span>Ball auf die andere Seite bringen.</span></div></div><div class="step"><div class="num">14</div><div><b>Spiel mit Verlagerung (25 Min):</b> <span>Pflichtverlagerung nach 5 Pässen.</span></div></div><div class="step"><div class="num">14</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld breiter</p><p><span class="tick">✓</span> Gegner aktiv</p><p><span class="tick">✓</span> Verlagerung mit Abschluss</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Verlagerungs-Turnier mit Punkten.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 160 100 L 330 100"/><path d="M 370 100 L 540 100"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="80" cy="80" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="80" y="89">1</text>
+  <circle cx="350" cy="45" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="54">2</text>
+  <circle cx="620" cy="220" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="620" y="229">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">14</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Torschuss · Einheit 15</div>
+  <h1 class="t">Torschuss unter Zeitdruck</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>12 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Abschluss unter Zeitdruck, schnelle Entscheidungen und Präzision.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">15</div><div><b>Aufwärmen (10 Min):</b> <span>Schussübungen.</span></div></div><div class="step"><div class="num">15</div><div><b>Zeitdruck-Torschuss (30 Min):</b> <span>Abschluss innerhalb von 3 Sekunden.</span></div></div><div class="step"><div class="num">15</div><div><b>Wettkampf (25 Min):</b> <span>Teamwertung mit Punkten.</span></div></div><div class="step"><div class="num">15</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Zeit reduzieren</p><p><span class="tick">✓</span> Gegner aktiv</p><p><span class="tick">✓</span> Schwacher Fuß</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Schuss-Wettbewerb mit Zeitdruck.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 150 240 C 200 240 220 180 280 180"/><path d="M 550 60 C 500 60 480 120 420 120"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="200" cy="200" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="200" y="209">1</text>
+  <circle cx="350" cy="60" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="69">2</text>
+  <circle cx="500" cy="240" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="500" y="249">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">15</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">1 gegen 1 · Einheit 16</div>
+  <h1 class="t">1 gegen 1 – Torwarttraining</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>12 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>1-gegen-1-Duelle vor dem Tor, Abschluss und Torwartaktionen trainieren.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">16</div><div><b>Aufwärmen (10 Min):</b> <span>Fangübungen für Torhüter.</span></div></div><div class="step"><div class="num">16</div><div><b>1 gegen 1 (35 Min):</b> <span>Duelle vor dem Tor, jeder ist abwechselnd Torhüter.</span></div></div><div class="step"><div class="num">16</div><div><b>Abschlussdruck (20 Min):</b> <span>Abschluss nach Vorlage.</span></div></div><div class="step"><div class="num">16</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Startpositionen variieren</p><p><span class="tick">✓</span> Zeitlimit</p><p><span class="tick">✓</span> Torwart aktiv</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>1-gegen-1-Turnier mit Torhüterwechsel.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 150 240 C 200 240 220 180 280 180"/><path d="M 550 60 C 500 60 480 120 420 120"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="200" cy="200" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="200" y="209">1</text>
+  <circle cx="350" cy="60" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="69">2</text>
+  <circle cx="500" cy="240" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="500" y="249">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">16</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Ballzirkulation · Einheit 17</div>
+  <h1 class="t">Ballzirkulation mit Anbietbewegungen</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Anbietbewegungen, Passspiel und das Lösen vom Gegner im Ballbesitz.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">17</div><div><b>Aufwärmen (10 Min):</b> <span>Rondo 5 gegen 2.</span></div></div><div class="step"><div class="num">17</div><div><b>Zirkulation (35 Min):</b> <span>Anbieten, Doppelpässe, Ball läuft schnell.</span></div></div><div class="step"><div class="num">17</div><div><b>Punktejagd (20 Min):</b> <span>8 Pässe = Punkt.</span></div></div><div class="step"><div class="num">17</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Feld verkleinern</p><p><span class="tick">✓</span> Zwei Kontakte</p><p><span class="tick">✓</span> Fänger aktiv</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Zirkulations-Wettbewerb.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="100" fill="none" stroke="#2A2A26" stroke-width="5" stroke-dasharray="14 10"/>
+ <g font-family="Arial" font-weight="800" font-size="23" text-anchor="middle">
+  <circle cx="350" cy="52" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="61">1</text>
+  <circle cx="446" cy="100" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="446" y="109">2</text>
+  <circle cx="254" cy="100" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="254" y="109">3</text>
+  <circle cx="446" cy="200" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="446" y="209">4</text>
+  <circle cx="254" cy="200" r="23" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="254" y="209">5</text>
+  <circle cx="350" cy="150" r="20" fill="#F2B84B" stroke="#0B1210" stroke-width="4"/><text x="350" y="158">P</text>
+  <circle cx="350" cy="248" r="20" fill="#F2B84B" stroke="#0B1210" stroke-width="4"/><text x="350" y="256">P</text>
+ </g>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">17</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Pressing · Einheit 18</div>
+  <h1 class="t">Angriffspressing nach Abstoß</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>75</b> Minuten</div>
+    <div class="chip"><b>14</b> Spieler</div>
+    <div class="chip"><b>10 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Geordnetes Anlaufen nach Abstoß, Balleroberung im gegnerischen Drittel.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">18</div><div><b>Aufwärmen (10 Min):</b> <span>Lauf- und Reaktionsspiele.</span></div></div><div class="step"><div class="num">18</div><div><b>Anlaufen nach Abstoß (30 Min):</b> <span>Pressingmuster nach Abstoß üben.</span></div></div><div class="step"><div class="num">18</div><div><b>Spiel 7 gegen 7 (25 Min):</b> <span>mit Pressingregel nach Abstoß.</span></div></div><div class="step"><div class="num">18</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Pressingzonen</p><p><span class="tick">✓</span> Sekundenregel</p><p><span class="tick">✓</span> Mehr Fänger</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Pressing-Turnier nach Abstoß.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="2" y1="205" x2="698" y2="205" stroke="#E8873C" stroke-width="6" stroke-dasharray="16 12"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 300 225 L 250 175"/><path d="M 400 225 L 450 175"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="350" cy="235" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="244">1</text>
+  <circle cx="300" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="300" y="149">2</text>
+  <circle cx="400" cy="140" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="400" y="149">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">18</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Spielform · Einheit 19</div>
+  <h1 class="t">8 gegen 8 mit Zonenregeln</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>80</b> Minuten</div>
+    <div class="chip"><b>16</b> Spieler</div>
+    <div class="chip"><b>8 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Taktische Aufgaben im Wettkampf: Zonen bespielen und Abschlusschancen herausspielen.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">19</div><div><b>Aufwärmen (10 Min):</b> <span>freies Spiel.</span></div></div><div class="step"><div class="num">19</div><div><b>Zonen-Spiel (40 Min):</b> <span>8 gegen 8 mit Zonenregeln.</span></div></div><div class="step"><div class="num">19</div><div><b>Regelwechsel (20 Min):</b> <span>neue taktische Aufgaben.</span></div></div><div class="step"><div class="num">19</div><div><b>Abschluss (10 Min):</b> <span>freies Spiel.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Zonen verkleinern</p><p><span class="tick">✓</span> Joker</p><p><span class="tick">✓</span> Punkte für Zonen</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Zonen-Turnier mit Punktewertung.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 160 100 L 330 100"/><path d="M 370 100 L 540 100"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="80" cy="80" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="80" y="89">1</text>
+  <circle cx="350" cy="45" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="54">2</text>
+  <circle cx="620" cy="220" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="620" y="229">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">19</div>
+ </footer>
+</div>
+<div class="page">
+ <div class="goldline"></div>
+ <header class="pd"><div class="brand">FUßBALLPRO <span>MASTERPAKET</span></div><div class="band">Band 03 · D-Jugend</div></header>
+ <div class="pad">
+  <div class="eyebrow">Turnier · Einheit 20</div>
+  <h1 class="t">Turnier mit Aufgaben</h1>
+  <div class="rule"></div>
+  <div class="chips">
+    <div class="chip"><b>80</b> Minuten</div>
+    <div class="chip"><b>16</b> Spieler</div>
+    <div class="chip"><b>8 Bälle</b></div>
+    <div class="chip"><b>U13–U14</b></div>
+  </div>
+  <div class="card"><div class="label">Ziel</div><p>Wettkampfform mit taktischen Zusatzaufgaben für jedes Team.</p></div>
+  <div class="card"><div class="label">Ablauf</div><div class="step"><div class="num">20</div><div><b>Aufwärmen (10 Min):</b> <span>freies Spiel.</span></div></div><div class="step"><div class="num">20</div><div><b>Gruppenphase (40 Min):</b> <span>Teams mit Zusatzaufgaben.</span></div></div><div class="step"><div class="num">20</div><div><b>Finale (20 Min):</b> <span>die besten Teams spielen das Finale.</span></div></div><div class="step"><div class="num">20</div><div><b>Siegerrunde (10 Min):</b> <span>Siegerehrung mit Fairplay-Preis.</span></div></div></div>
+  <div style="display:flex;gap:5mm;">
+    <div class="card" style="flex:1;"><div class="label">Varianten</div><p><span class="tick">✓</span> Mehr Teams</p><p><span class="tick">✓</span> Jokerregeln</p><p><span class="tick">✓</span> Aufgaben variieren</p></div>
+    <div class="card" style="flex:1.3;"><div class="label">Abschlussspiel</div><p>Turnierfinale mit Siegerehrung.</p></div>
+  </div>
+  <div class="fieldwrap" style="margin-top:5mm;">
+    <div class="label">Platzskizze</div>
+    
+<svg viewBox="0 0 700 300" class="diag">
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="#7FB06B"/>
+ <rect x="2" y="2" width="696" height="296" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+ <line x1="350" y1="2" x2="350" y2="298" stroke="#fff" stroke-width="3"/>
+ <circle cx="350" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="2" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="548" y="62" width="150" height="176" fill="none" stroke="#fff" stroke-width="3"/>
+ <g stroke="#2A2A26" stroke-width="5" marker-end="url(#a)">
+  <path d="M 160 100 L 330 100"/><path d="M 370 100 L 540 100"/>
+ </g>
+ <g font-family="Arial" font-weight="800" font-size="24" text-anchor="middle">
+  <circle cx="80" cy="80" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="80" y="89">1</text>
+  <circle cx="350" cy="45" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="350" y="54">2</text>
+  <circle cx="620" cy="220" r="24" fill="#fff" stroke="#0B1210" stroke-width="4"/><text x="620" y="229">3</text>
+ </g>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2A2A26"/></marker></defs>
+</svg>
+  </div>
+ </div>
+ <footer class="pd">
+  <div class="l"><img src="file:///Users/braiannavarrete/Downloads/Opencode/producto/src/logo.png" alt=""><span>FUßBALLPRO MASTERPAKET · Band 03 · D-Jugend</span></div>
+  <div class="pageno">20</div>
+ </footer>
+</div></body></html>

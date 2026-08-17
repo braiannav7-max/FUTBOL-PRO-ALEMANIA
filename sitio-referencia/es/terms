@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Términos y Condiciones | EuroHack</title><link rel="icon" href="/assets/eurohack-logo.png"><link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-900-latin.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-700-latin.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-400-latin.woff2"><link rel="preconnect" href="https://js.stripe.com" crossorigin><link rel="preconnect" href="https://checkout.stripe.com" crossorigin><meta property="og:title" content="Términos y Condiciones | EuroHack"><meta property="og:type" content="product"><script>
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+</script><script defer src="/_vercel/insights/script.js"></script><link rel="stylesheet" href="/_astro/checkout.BeQra0e6.css">
+<style>.legal-content[data-astro-cid-lhly6ysv] a{color:#93bef8}.legal-content[data-astro-cid-lhly6ysv] a:hover{opacity:.85}
+</style></head> <body class="min-h-screen bg-white">  <main class="min-h-screen bg-surface-950 text-white" data-astro-cid-lhly6ysv> <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16" data-astro-cid-lhly6ysv> <a href="/es" class="text-sm text-white/50 hover:text-white transition-colors inline-flex items-center gap-1 mb-8" data-astro-cid-lhly6ysv> <span aria-hidden="true" data-astro-cid-lhly6ysv>←</span> Volver al inicio </a> <h1 class="text-3xl sm:text-4xl font-black mb-8" data-astro-cid-lhly6ysv>Términos y Condiciones</h1> <div class="legal-content text-white/80 leading-relaxed" data-astro-cid-lhly6ysv>
+        <h3 class="text-xl font-bold mt-6 mb-2">1. Información General y Naturaleza del Servicio</h3>
+        <p class="mb-4">Bienvenidos a <strong>EuroHack</strong>. Somos una plataforma dedicada a la venta de productos digitales, manuales, herramientas online y educación digital a nivel internacional. Al utilizar nuestro sitio web y adquirir nuestros productos, el usuario acepta estos Términos y Condiciones, redactados conforme a la normativa europea de comercio electrónico y a la Ley General para la Defensa de los Consumidores y Usuarios de España.</p>
+        <p class="mb-4"><strong>Datos del titular:</strong> EuroHack — N.º IVA: 05202660238 — Contacto: <a href="mailto:info@eurohack.shop" class="underline">info@eurohack.shop</a></p>
+
+        <h3 class="text-xl font-bold mt-6 mb-2">2. Descargo de Responsabilidad de Ingresos y Resultados (Earnings Disclaimer)</h3>
+        <p class="mb-4">Toda la información, métodos educativos y herramientas proporcionadas por EuroHack tienen fines estrictamente educativos e informativos. No ofrecemos ninguna garantía expresa o implícita respecto a la obtención de resultados financieros, beneficios de salud, éxitos comerciales ni de ningún otro tipo. El éxito de cada usuario depende única y exclusivamente de su dedicación, esfuerzo, habilidades previas y correcta implementación de la información proporcionada.</p>
+
+        <h3 class="text-xl font-bold mt-6 mb-2">3. Política de Reembolso y Desistimiento para Bienes Digitales</h3>
+        <p class="mb-4">De acuerdo con la legislación europea vigente y el Art. 103, letra m) de la Ley General para la Defensa de los Consumidores y Usuarios, el derecho voluntario de desistimiento de 14 días <strong>no es aplicable</strong> a la provisión de contenido digital (que no se preste en un soporte material físico) cuando la ejecución haya comenzado.</p>
+        <p class="mb-4">Al concluir la compra, acceder de manera inmediata al área de miembros o iniciar la descarga del material, el usuario otorga su consentimiento expreso y reconoce formalmente que <strong>pierde el derecho de desistimiento automático</strong>. De forma excepcional, si un producto en particular incluye una garantía de devolución condicionada por políticas internas, esta será aplicable única y exclusivamente si se detalla explícitamente en la carta de ventas oficial de dicho producto.</p>
+      </div> <div class="mt-12 border-t border-white/10 pt-6 text-center" data-astro-cid-lhly6ysv> <p class="text-[11px] text-white/30" data-astro-cid-lhly6ysv>
+Giannattasio Juan Martin — P. IVA 05202660238 — <a href="mailto:info@eurohack.shop" class="underline hover:opacity-80" data-astro-cid-lhly6ysv>info&#64;eurohack.shop</a> </p>   </div> </div> </main>    </body></html>
